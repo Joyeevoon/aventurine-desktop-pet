@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>砂金·戏浪 · 桌宠</title>
+<link rel="stylesheet" href="css/style.css?v=10">
+</head>
+<body>
+<div id="app">
+
+  <svg class="icon-defs" aria-hidden="true">
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.4v2.6M12 19v2.6M2.4 12h2.6M19 12h2.6M4.9 4.9l1.9 1.9M17.2 17.2l1.9 1.9M19.1 4.9l-1.9 1.9M6.8 17.2l-1.9 1.9"/></symbol>
+    <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20.4c-1.1-.8-6.9-4.9-8.8-9C2.1 8.9 3.6 5.4 7 5.1c2-.2 3.5.9 5 2.9 1.5-2 3-3.1 5-2.9 3.4.3 4.9 3.8 3.8 6.3-1.9 4.1-7.7 8.2-8.8 9z"/></symbol>
+    <symbol id="i-chip" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.4"/><circle cx="12" cy="12" r="4"/><path d="M12 3.6v3M12 17.4v3M3.6 12h3M17.4 12h3M6 6l2.1 2.1M15.9 15.9L18 18M18 6l-2.1 2.1M8.1 15.9L6 18"/></symbol>
+    <symbol id="i-cards" viewBox="0 0 24 24"><rect x="3.2" y="6.4" width="9.6" height="13.4" rx="1.8" transform="rotate(-10 8 13)"/><rect x="11.2" y="4.4" width="9.6" height="13.4" rx="1.8" transform="rotate(9 16 11)"/><path d="M16 8.2l1.1 1.9h-2.2z"/></symbol>
+    <symbol id="i-wave" viewBox="0 0 24 24"><path d="M2.5 8.6c2-2.2 4-2.2 6 0s4 2.2 6 0 4-2.2 6 0"/><path d="M2.5 14c2-2.2 4-2.2 6 0s4 2.2 6 0 4-2.2 6 0"/><path d="M2.5 19.4c2-2 4-2 6 0s4 2 6 0 4-2 6 0"/></symbol>
+    <symbol id="i-cocktail" viewBox="0 0 24 24"><path d="M3.4 4.6h17.2L12 13.6z"/><path d="M12 13.6v5.6M8.6 19.2h6.8"/><circle cx="15.4" cy="7.6" r="1.5"/></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3.4l1.7 4.9 4.9 1.7-4.9 1.7L12 16.6l-1.7-4.9L5.4 10l4.9-1.7z"/><path d="M18.6 16.4l.8 2.2 2.2.8-2.2.8-.8 2.2-.8-2.2-2.2-.8 2.2-.8z"/></symbol>
+    <symbol id="i-brain" viewBox="0 0 24 24"><path d="M12 5.2v13.6"/><path d="M12 5.2c-1.4-1.7-4.6-1.2-4.9 1.5-1.9.4-2.3 3-.7 4-1 1.6.3 3.6 2 3.5.3 2.3 3.4 2.4 3.6.2"/><path d="M12 5.2c1.4-1.7 4.6-1.2 4.9 1.5 1.9.4 2.3 3 .7 4 1 1.6-.3 3.6-2 3.5-.3 2.3-3.4 2.4-3.6.2"/></symbol>
+    <symbol id="i-volume" viewBox="0 0 24 24"><path d="M4 9.4h3.2L11.6 6v12L7.2 14.6H4z"/><path d="M15 9.4a3.6 3.6 0 010 5.2"/><path d="M17.8 6.8a7.2 7.2 0 010 10.4"/></symbol>
+    <symbol id="i-mute" viewBox="0 0 24 24"><path d="M4 9.4h3.2L11.6 6v12L7.2 14.6H4z"/><path d="M15.4 9.6l5 4.8M20.4 9.6l-5 4.8"/></symbol>
+    <symbol id="i-gear" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 2.8l1.5 2.4 2.8-.5.5 2.8 2.4 1.5-1.4 2.5 1.4 2.5-2.4 1.5-.5 2.8-2.8-.5L12 21.2l-1.5-2.4-2.8.5-.5-2.8L4.8 15l1.4-2.5L4.8 10l2.4-1.5.5-2.8 2.8.5z"/></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="M4.2 11.6L20 4.4l-4.4 15.4-4.2-5.8z"/><path d="M11.4 14l8.6-9.6"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M6.2 6.2l11.6 11.6M17.8 6.2L6.2 17.8"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4.4 7.4h15.2M4.4 12h15.2M4.4 16.6h15.2"/></symbol>
+    <symbol id="i-music" viewBox="0 0 24 24"><path d="M9.6 18.2V6.4l9.4-2v11.4"/><circle cx="7.1" cy="18.2" r="2.5"/><circle cx="16.5" cy="15.8" r="2.5"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M8.4 5.6l10 6.4-10 6.4z"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M9 5.8v12.4M15 5.8v12.4"/></symbol>
+    <symbol id="i-prev" viewBox="0 0 24 24"><path d="M18.4 6.2v11.6L10 12z"/><path d="M5.6 6v12"/></symbol>
+    <symbol id="i-next" viewBox="0 0 24 24"><path d="M5.6 6.2v11.6L14 12z"/><path d="M18.4 6v12"/></symbol>
+    <symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M4 7.2h3.2l9.6 9.6H20M4 16.8h3.2l2.4-2.4M20 7.2h-3.2l-1.2 1.2"/><path d="M17.6 4.8L20 7.2l-2.4 2.4M17.6 14.4L20 16.8l-2.4 2.4"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><circle cx="8.4" cy="15.6" r="4.2"/><path d="M11.6 12.4L20 4M16.4 7.6l2.2 2.2M18.4 5.6l2.2 2.2"/></symbol>
+  </svg>
+
+  <div class="bg" aria-hidden="true">
+    <div class="bg-glow a"></div>
+    <div class="bg-glow b"></div>
+  </div>
+
+  <header class="topbar">
+    <div class="chip" id="timeChip" title="本地时间">
+      <svg><use href="#i-sun"/></svg><span id="timeLabel">--:--</span>
+    </div>
+    <div class="chip aff" id="affChip" title="好感度">
+      <svg><use href="#i-heart"/></svg>
+      <span id="affLabel">好感 0</span>
+      <span class="hearts" id="hearts"></span>
+    </div>
+  </header>
+
+  <section class="pet-stage" id="petStage">
+    <div class="bubble" id="bubble" hidden>
+      <div class="bubble-head">
+        <span class="bubble-name">砂金·戏浪</span>
+        <span class="bubble-dots" id="bubbleDots"><i></i><i></i><i></i></span>
+      </div>
+      <div class="bubble-text" id="bubbleText"></div>
+      <div class="bubble-hint" id="bubbleHint">点击继续 ▸</div>
+    </div>
+    <img class="pet" id="petImg" src="assets/idle.webp" alt="砂金·戏浪" draggable="false">
+  </section>
+
+  <div class="dock">
+    <div class="dock-row input-row">
+      <input id="userInput" type="text" autocomplete="off" placeholder="和砂金说点什么…（Enter 发送）">
+      <button class="send" id="sendBtn" title="发送">
+        <svg><use href="#i-send"/></svg>
+      </button>
+    </div>
+    <div class="dock-row icon-row">
+      <button class="tool" data-act="idle"><svg><use href="#i-wave"/></svg><span>闲聊</span></button>
+      <button class="tool" data-act="catgame"><svg><use href="#i-cards"/></svg><span>猫糕牌</span></button>
+      <button class="tool" data-act="greet"><svg><use href="#i-sun"/></svg><span>问候</span></button>
+      <button class="tool" data-act="drink"><svg><use href="#i-cocktail"/></svg><span>请一杯</span></button>
+      <button class="tool" data-act="memory"><svg><use href="#i-brain"/></svg><span>独白</span></button>
+      <button class="tool" data-act="music" id="musicBtn"><svg><use href="#i-music"/></svg><span>音乐</span></button>
+      <button class="tool" data-act="voice" id="voiceBtn"><svg><use href="#i-volume"/></svg><span>语音</span></button>
+      <button class="tool" data-act="settings"><svg><use href="#i-gear"/></svg><span>设置</span></button>
+    </div>
+  </div>
+
+  <div class="ctx" id="ctxMenu" hidden></div>
+
+  <div class="modal-wrap" id="catPanel" hidden>
+    <div class="modal">
+      <div class="modal-head">
+        <h3><svg class="mi"><use href="#i-cards"/></svg>猫糕牌 · 翻牌配对</h3>
+        <button class="x" data-close><svg><use href="#i-close"/></svg></button>
+      </div>
+      <div class="modal-body">
+        <div class="cat-hud">
+          <span class="hud-item">翻开 <b id="catFlips">0</b> 次</span>
+          <span class="hud-item">配对 <b id="catPairs">0 / 8</b></span>
+          <span class="hud-item">最佳 <b id="catBest">—</b></span>
+          <button class="ghost" id="catNew">再来一局</button>
+        </div>
+        <div class="cat-grid" id="catGrid"></div>
+        <p class="rule">每次翻开两张，一样就配对成功，不一样会翻回去。全部配对即通关，记录总翻开次数。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-wrap" id="musicPanel" hidden>
+    <div class="modal">
+      <div class="modal-head">
+        <h3><svg class="mi"><use href="#i-music"/></svg>音乐库</h3>
+        <button class="x" data-close><svg><use href="#i-close"/></svg></button>
+      </div>
+      <div class="modal-body">
+        <div class="now-playing" id="nowPlaying">
+          <div class="np-disc" id="npDisc"><svg><use href="#i-music"/></svg></div>
+          <div class="np-meta">
+            <span class="np-title" id="npTitle">还没放歌</span>
+            <span class="np-mood" id="npMood">挑一首，或者对他说「唱歌」</span>
+          </div>
+        </div>
+        <div class="track-list" id="trackList"></div>
+        <div class="player-row">
+          <button class="pbtn" id="mPrev" title="上一首"><svg><use href="#i-prev"/></svg></button>
+          <button class="pbtn play" id="mPlay" title="播放/暂停"><svg><use href="#i-play"/></svg></button>
+          <button class="pbtn" id="mNext" title="下一首"><svg><use href="#i-next"/></svg></button>
+          <button class="pbtn" id="mShuffle" title="随机一首"><svg><use href="#i-shuffle"/></svg></button>
+          <div class="vol">
+            <svg><use href="#i-volume"/></svg>
+            <input type="range" id="mVol" min="0" max="100" value="62">
+          </div>
+        </div>
+        <p class="rule">每首放完一遍会自动停下；在对话框里对他说「唱歌」也会随机放一首。</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-wrap" id="setupPanel" hidden>
+    <div class="modal">
+      <div class="modal-head">
+        <h3><svg class="mi"><use href="#i-key"/></svg>首次设置 · 填入你的 Key</h3>
+      </div>
+      <div class="modal-body settings">
+        <p class="rule">Key 只保存在你自己的浏览器里（localStorage），不会写进页面、也不会随页面分享出去。</p>
+        <label class="field">
+          <span>LLM API Key（必填 · 对话用）</span>
+          <input id="setupLlm" type="password" placeholder="sk-...">
+        </label>
+        <label class="field">
+          <span>TTS API Key（可选 · 英语语音用）</span>
+          <input id="setupEleven" type="password" placeholder="填入你的 TTS Key">
+        </label>
+        <div class="modal-actions">
+          <button class="ghost" id="setupSkip">先跳过</button>
+          <button class="primary" id="setupSave">保存并开始</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-wrap" id="memoryPanel" hidden>
+    <div class="modal">
+      <div class="modal-head">
+        <h3><svg class="mi"><use href="#i-brain"/></svg>内心独白</h3>
+        <button class="x" data-close><svg><use href="#i-close"/></svg></button>
+      </div>
+      <div class="modal-body">
+        <p class="rule" id="memoryHint"></p>
+        <div class="memory-list" id="memoryList"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-wrap" id="settingsPanel" hidden>
+    <div class="modal">
+      <div class="modal-head">
+        <h3><svg class="mi"><use href="#i-gear"/></svg>设置</h3>
+        <button class="x" data-close><svg><use href="#i-close"/></svg></button>
+      </div>
+      <div class="modal-body settings">
+        <label class="field">
+          <span>更换 LLM API Key（留空即不变）</span>
+          <input id="setKey" type="password" placeholder="需要换 LLM Key 时才填，平时留空">
+        </label>
+        <label class="field">
+          <span>更换 TTS API Key（留空即不变）</span>
+          <input id="setElevenKey" type="password" placeholder="需要换 TTS Key 时才填，平时留空">
+        </label>
+        <div class="switch-row">
+          <label class="switch"><input type="checkbox" id="setVoiceOn" checked><span>开启语音（仅英语对话时）</span></label>
+          <label class="switch"><input type="checkbox" id="setIdleOn" checked><span>待机自言自语</span></label>
+        </div>
+        <div class="modal-actions">
+          <button class="ghost" id="setReset">清空对话与进度</button>
+          <button class="primary" id="setSave">保存</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" hidden></div>
+</div>
+
+<script src="js/config.js?v=10"></script>
+<script src="js/persona.js?v=10"></script>
+<script src="js/recite.js?v=10"></script>
+<script src="js/music.js?v=10"></script>
+<script src="js/tts.js?v=10"></script>
+<script src="js/llm.js?v=10"></script>
+<script src="js/dialogue.js?v=10"></script>
+<script src="js/pet.js?v=10"></script>
+
+<script src="js/catgame.js?v=10"></script>
+<script src="js/app.js?v=10"></script>
+</body>
+</html>
